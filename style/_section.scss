@@ -1,0 +1,146 @@
+@import 'variables.scss';
+
+h1 {
+    padding: 100px;
+    color: $green;
+    font-size: 3.5em;
+}
+
+h2 {
+    padding: 10px 70px;
+    color: $green;
+    text-align: center;
+}
+
+#product-container {
+    height: 750px;
+    color: $fonce;
+    background-color: $pink;
+    border-radius: 20px;
+    img {
+        width: 250px; 
+        height: 300px;
+    }
+}
+
+#nav-category {
+    list-style-type: none;
+    padding: 50px;
+    li a {
+        text-decoration: none;
+        color: $clear;
+        background-color: $fonce;
+        font-size: 1.5em;
+        padding: 10px 20px;
+        border-radius: 30px;
+    }
+    li a:hover {
+        color: $pink;
+    }
+}
+
+form {
+    margin: 50px 300px;
+    #btn {
+        padding: 10px 25px;
+        color: $pink;
+        background-color: $fonce;
+        border-radius: 20px;
+    }
+    #btn-addProduct {
+        width: 100px;
+        padding: 10px 25px;
+        color: $pink;
+        background-color: $fonce;
+        border-radius: 20px;
+    }
+}
+
+.formLoginUser{
+    width: 300px;
+}
+
+#input-form-addCategory
+{
+    width: 250px;
+    margin: 0px 30px;
+}
+
+#container-form-addProduct {
+    height: 700px;
+}
+
+
+
+#form-addProduct {
+    height: 500px;
+}
+
+#productTable {
+    height: 800px;
+    width: 95%;
+    margin-top: 50px;
+}
+
+.table .table-bordered{
+    margin: 100px;
+    width: 150px;
+}
+
+
+
+/****************************Responsive**************************/
+
+@media screen and (max-width: 1030px) {
+    #nav-category {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 350px;
+        padding: 10px;
+    }
+
+    #container-form-addProduct {
+        height: 400px;
+        width: 500px;
+    }
+
+    form {
+        margin: 50px 100px;
+        #form-addCategory {
+            margin: 50px 150px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 859px) {
+    #product-container {
+        display: flex;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        padding: 50px;
+        font-size: 3em;
+    }
+
+    h2 {
+        padding: 10px;
+    }
+
+    #form-addCategory {
+        margin: 50px 100px;
+    }
+}
+@media screen and (max-width: 470px) {
+    #product-container {
+        height: 600px;
+        img {
+            width: 95%; 
+            height: 40%;
+        }
+    }
+}

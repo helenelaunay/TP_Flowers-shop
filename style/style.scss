@@ -1,0 +1,19 @@
+@import 'variables.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import 'hero.scss';
+@import 'section.scss';
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+aside #link-boutique {
+    margin: 60px 40px;
+    background-color: $green;
+    border-radius: 30px;
+    color: $clear;
+    font-size: 1.2em;
+    text-decoration: none;
+}

@@ -1,0 +1,51 @@
+@import 'variables.scss';
+
+ #hero {
+    height: 800px;
+    background-image: url(/assets/hero.jpg);
+    background-size: inherit;
+    background-position: left;
+    #hero-title {
+        font-size: 4em;
+        font-weight: 600;
+        color: $green;
+    }
+    #hero-button {
+        background-color: $clear;
+        width: 40%;
+        font-size: 3em;
+        border-radius: 30px;
+        padding: 10px 0px;
+        margin: 50px 0px;
+        a {
+            text-decoration: none;
+            color: $green;
+        }
+        a:hover {
+            color: $fonce;
+        }
+    }
+}
+
+/****************************Responsive**************************/
+
+@media screen and (max-width: 768px) {
+    #hero #hero-title {
+        font-size: 3em;
+    }
+
+    #hero #hero-button {
+        font-size: 2em;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #hero #hero-title {
+        font-size: 2.6em;
+    }
+
+    #hero #hero-button {
+        font-size: 1.4em;
+    }
+}
